@@ -1,6 +1,10 @@
 function getPlayerChoice() {
     let action = prompt("Select your action!");
     action = action.toLocaleLowerCase();
+    
+    if (action !== "rock" && action !== "paper" && action !== "scissor")
+        action = "invalid";
+
     return action;
 }
 
