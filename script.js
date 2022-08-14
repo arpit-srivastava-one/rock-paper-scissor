@@ -1,3 +1,15 @@
+function game() {
+    for (let i = 0; i < 5; i++) {
+        let playerChoice = getPlayerChoice();
+        let computerChoice = getComputerChoice();
+        let result = playRound(playerChoice, computerChoice);
+        let resultDesc = getResultDesc(result);
+
+        console.log(`Round ${i+1}: ${resultDesc}`);
+    }
+}
+
+
 function playRound(playerChoice, computerChoice) {
     let result = 0;
 
