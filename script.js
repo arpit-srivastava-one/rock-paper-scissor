@@ -1,3 +1,24 @@
+function playRound(playerChoice, computerChoice) {
+    let result = 0;
+
+    // 0 => Player wins
+    // 1 => Computer wins
+    // 2 => Draw
+
+    if (playerChoice === "rock" && computerChoice === "rock") result = 2;
+    else if (playerChoice === "paper" && computerChoice === "paper") result = 2;
+    else if (playerChoice === "scissor" && computerChoice === "scissor") result = 2;
+    else if (playerChoice === "rock" && computerChoice === "scissor") result = 0;
+    else if (playerChoice === "paper" && computerChoice === "rock") result = 0;
+    else if (playerChoice === "scissor" && computerChoice === "paper") result = 0;
+    else if (playerChoice === "rock" && computerChoice === "paper") result = 1;
+    else if (playerChoice === "paper" && computerChoice === "scissor") result = 1;
+    else if (playerChoice === "scissor" && computerChoice === "rock") result = 1;
+
+    return result;
+}
+
+
 function getPlayerChoice() {
     let action = prompt("Select your action!");
     action = action.toLocaleLowerCase();
