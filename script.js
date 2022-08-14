@@ -19,6 +19,22 @@ function playRound(playerChoice, computerChoice) {
 }
 
 
+function getResultDesc(result) {
+    let resultText = "";
+
+    if (result === 0)
+        resultText = "You win!";
+    else if (result === 1)
+        resultText = "You lose :(";
+    else if (result === 2)
+        resultText = "Draw.";
+    else
+        resultText = "Invalid";
+    
+    return resultText;
+}
+
+
 function getPlayerChoice() {
     let action = prompt("Select your action!");
     action = action.toLocaleLowerCase();
