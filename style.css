@@ -51,10 +51,20 @@ body {
 
 .middle .left-section {
     background-color: #90D1FF;
+
+    box-sizing: border-box;
+    border-width: 0px 5px 0px 0px;
+    border-color: black;
+    border-style: solid;
 }
 
 .middle .right-section {
     background-color: #FFA39D;
+
+    box-sizing: border-box;
+    border-width: 0px 0px 0px 5px;
+    border-color: black;
+    border-style: solid;
 }
 
 
