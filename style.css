@@ -1,6 +1,7 @@
 body {
     height: 100vh;
     box-sizing: border-box;
+    font-family: "Ubuntu";
     
     border: 10px solid black;
     margin: 0px;
@@ -12,8 +13,14 @@ body {
 }
 
 .header {
-    background-color: orange;
+    background-color: white;
+    color: black;
     height: 15%;
+
+    box-sizing: border-box;
+    border-width: 0px 0px 10px 0px;
+    border-color: black;
+    border-style: solid;
 
     display: flex;
     flex-direction: row;
