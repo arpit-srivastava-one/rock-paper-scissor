@@ -1,7 +1,10 @@
+* {
+    font-family: "Ubuntu";
+}
+
 body {
     height: 100vh;
-    box-sizing: border-box;
-    font-family: "Ubuntu";
+    box-sizing: border-box;    
     
     border: 10px solid black;
     margin: 0px;
@@ -29,7 +32,7 @@ body {
 }
 
 .middle {
-    background-color: blue;
+    background-color: magenta;
     height: 70%;
 
     display: flex;
@@ -47,31 +50,30 @@ body {
 }
 
 .middle .left-section {
-    background-color: yellow;
+    background-color: #90D1FF;
 }
 
 .middle .right-section {
-    background-color: pink;
+    background-color: #FFA39D;
 }
 
 
 .player-title {
-    height: 20%;
+    height: 10%;
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 
     font-size: 25px;
 }
 
 .middle .left-section .player-title {
-    background-color: magenta;
+    background-color: transparent;
 }
 
 .middle .right-section .player-title {
-    background-color: cyan;
+    background-color: transparent;
 }
 
 
@@ -79,52 +81,68 @@ body {
     height: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .middle .left-section .player-options {
-    background-color: brown;
+    background-color: transparent;
 }
 
 .middle .right-section .player-options {
-    background-color: purple;
+    background-color: transparent;
 }
 
 .option {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
 .card {
-    background-color: cyan;
-    width: 100px;
-    height: 100px;
+    background-color: white;
+    width: 125px;
+    height: 125px;
+
+    border: 8px solid black;
+    border-radius: 15%;
 }
 
 .confirm {
-    background-color: red;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+
+    border: 4px solid black;
+    border-radius: 20px;
+
+    width: 150px;
+    height: 30px;
 }
 
 
 .player-score {
-    height: 20%;
+    height: 30%;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    font-size: 75px;
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+    font-size: 100px;
 }
 
 .middle .left-section .player-score {
-    background-color: greenyellow;
+    background-color: transparent;
 }
 
 .middle .right-section .player-score {
-    background-color: slateblue;
+    background-color: transparent;
 }
 
 
