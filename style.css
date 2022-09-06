@@ -127,8 +127,7 @@ body {
 }
 
 
-.card {
-    background-color: white;
+.card, .card-selected {
     width: 125px;
     height: 125px;
     overflow: hidden;
@@ -144,11 +143,8 @@ body {
     transition: 0.1s;
 }
 
-.card img {
-    width: 80px;
-    height: auto;
-
-    margin-top: 20px;
+.card {
+    background-color: white;
 }
 
 .card:hover {
@@ -156,9 +152,15 @@ body {
     height: 165px;
 }
 
-.card:active {
-    margin-top: 0px;
-    height: 125px;
+.card-selected {
+    background-color: #B8FF8C;
+}
+
+.card img, .card-selected img {
+    width: 80px;
+    height: auto;
+
+    margin-top: 20px;
 }
 
 
