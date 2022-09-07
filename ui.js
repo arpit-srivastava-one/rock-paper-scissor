@@ -1,6 +1,6 @@
-const cards = document.querySelectorAll(".card");
+const playerCards = document.querySelectorAll(".middle .left-section .card");
 
-cards.forEach(card => {
+playerCards.forEach(card => {
     card.addEventListener("click", e => {
         card.classList.remove("card");
         card.classList.add("card-selected");
@@ -10,13 +10,13 @@ cards.forEach(card => {
 });
 
 const turnOnInteractioncards = () => {
-    cards.forEach(card => {
+    playerCards.forEach(card => {
         card.style.pointerEvents = "auto";
     });
 };
 
 const turnOffInteractioncards = () => {
-    cards.forEach(card => {
+    playerCards.forEach(card => {
         card.style.pointerEvents = "none";
     });
 };

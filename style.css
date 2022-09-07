@@ -113,23 +113,6 @@ body {
 }
 
 
-.middle .left-section .card {
-    background-color: #7BC8FF;
-}
-
-.middle .right-section .card {
-    background-color: #FF928B;
-}
-
-.middle .left-section .card:hover {
-    background-color: #a4d9ff;
-}
-
-.middle .right-section .card:hover {
-    background-color: #ffafa9;
-}
-
-
 .card, .card-selected {
     width: 125px;
     height: 125px;
@@ -150,11 +133,6 @@ body {
     background-color: white;
 }
 
-.card:hover {
-    margin-top: 40px;
-    height: 165px;
-}
-
 .card-selected {
     background-color: #B8FF8C;
 }
@@ -164,6 +142,21 @@ body {
     height: auto;
 
     margin-top: 20px;
+}
+
+
+.middle .left-section .card {
+    background-color: #7BC8FF;
+}
+
+.middle .left-section .card:hover {
+    background-color: #a4d9ff;
+    margin-top: 40px;
+    height: 165px;
+}
+
+.middle .right-section .card {
+    background-color: #FF928B;
 }
 
 
