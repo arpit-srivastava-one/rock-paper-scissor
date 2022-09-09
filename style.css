@@ -153,6 +153,9 @@ body {
     background-color: #a4d9ff;
     margin-top: 40px;
     height: 165px;
+
+    cursor: pointer;
+    user-select: none;
 }
 
 .middle .right-section .card {
@@ -191,7 +194,7 @@ body {
 
 
 .footer {
-    background-color: #FEFFD1;
+    background-color: #e4f2aa;
     height: 15%;
     
     font-size: 26px;
@@ -207,4 +210,17 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    transition: 0.1s;
+}
+
+.footer:hover {
+    background-color: #ffd88a;
+    cursor: pointer;
+}
+
+.footer:active {
+    background-color: #ffcc66;
+    cursor: pointer;
+    user-select: none;
 }
