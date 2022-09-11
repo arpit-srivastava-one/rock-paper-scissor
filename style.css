@@ -170,7 +170,7 @@ body {
 }
 
 
-.player-score, .computer-score {
+.score {
     height: 30%;
 
     display: flex;
@@ -205,14 +205,3 @@ body {
 
     transition: 0.1s;
 }
-
-/* .footer:hover {
-    background-color: #ffd88a;
-    cursor: pointer;
-}
-
-.footer:active {
-    background-color: #ffcc66;
-    cursor: pointer;
-    user-select: none;
-} */
