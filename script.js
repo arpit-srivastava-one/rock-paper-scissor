@@ -12,15 +12,15 @@ function game() {
 function playRound(playerChoice, computerChoice) {
     let result = "";
 
-    if (playerChoice === "rock" && computerChoice === "rock") result = "Draw. You both chose Rock.";
-    else if (playerChoice === "paper" && computerChoice === "paper") result = "Draw. You both chose Paper.";
-    else if (playerChoice === "scissor" && computerChoice === "scissor") result = "Draw. You both chose Scissor.";
-    else if (playerChoice === "rock" && computerChoice === "scissor") result = "You win! Player: Rock, Computer: Scissor";
-    else if (playerChoice === "paper" && computerChoice === "rock") result = "You win! Player: Paper, Computer: Rock";
-    else if (playerChoice === "scissor" && computerChoice === "paper") result = "You win! Player: Scissor, Computer: Paper";
-    else if (playerChoice === "rock" && computerChoice === "paper") result = "You lose. Player: Rock, Computer: Paper";
-    else if (playerChoice === "paper" && computerChoice === "scissor") result = "You lose. Player: Paper, Computer: Scissor";
-    else if (playerChoice === "scissor" && computerChoice === "rock") result = "You lose. Player: Scissor, Computer: Rock";
+    if (playerChoice === "rock" && computerChoice === "rock") result = "Draw";
+    else if (playerChoice === "paper" && computerChoice === "paper") result = "Draw";
+    else if (playerChoice === "scissor" && computerChoice === "scissor") result = "Draw";
+    else if (playerChoice === "rock" && computerChoice === "scissor") result = "You win!";
+    else if (playerChoice === "paper" && computerChoice === "rock") result = "You win!";
+    else if (playerChoice === "scissor" && computerChoice === "paper") result = "You win!";
+    else if (playerChoice === "rock" && computerChoice === "paper") result = "You lose.";
+    else if (playerChoice === "paper" && computerChoice === "scissor") result = "You lose.";
+    else if (playerChoice === "scissor" && computerChoice === "rock") result = "You lose.";
     else result = "Invalid";
 
     return result;
