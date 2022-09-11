@@ -6,7 +6,6 @@ const footerText = document.querySelector(".footer h2");
 let pCard = null;
 let cCard = null;
 
-let round = 0;
 let playerChoice = "";
 let computerChoice = "";
 let playerScore = 0;
@@ -81,7 +80,6 @@ function getChoice(card) {
 
 function showResult() {
     let result = playRound(playerChoice, computerChoice);
-    typeText(footerText, result);
 
     if (result === "You win!") {
         playerScore++;
@@ -97,7 +95,18 @@ function showResult() {
         computerScoreDiv.textContent = computerScore;
     }
 
-    nextRound();
+    if (playerScore === 5) {
+        typeText(footerText, "You won the game!");
+        gameComplete();
+    }
+    else if (computerScore === 5) {
+        typeText(footerText, "Game Over");
+        gameComplete();
+    }
+    else {
+        typeText(footerText, result);
+        nextRound();
+    }
 }
 
 
@@ -111,6 +120,23 @@ async function nextRound() {
     cCard.classList.add("card");
 
     turnOnInteractionCards();
+}
+
+async function gameComplete() {
+    await new Promise(resolve => setTimeout(resolve, 5000));
+    typeText(footerText, "Your Turn");
+    
+    pCard.classList.remove("card-selected");
+    pCard.classList.add("card");
+    cCard.classList.remove("card-selected");
+    cCard.classList.add("card");
+
+    turnOnInteractionCards();
+
+    playerScore = 0;
+    computerScore = 0;
+    document.querySelector(".player-score").textContent = playerScore;
+    document.querySelector(".computer-score").textContent = computerScore;
 }
 
 
